@@ -1,0 +1,9 @@
+{
+  "name": "com.SGS.gitpackage",
+  "version": "1.0.0",
+  "displayName": "Git Package",
+  "description": "Архитектурный паттерн.Паттерн для архитектуры",
+  "unity": "2019.1",
+  "dependencies": {
+ },
+}
