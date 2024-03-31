@@ -95,7 +95,7 @@ Transform:
   m_GameObject: {fileID: 9006013893002106994}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.008480072, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -243,7 +243,8 @@ MonoBehaviour:
   _audioSource: {fileID: 3226211781041840425}
   _jumpEffect: {fileID: 7802402628123793856}
   _runEffect: {fileID: 976772513574912109}
-  _config: {fileID: 11400000, guid: 7f7de08674215de498fa68d3134a52ac, type: 2}
+  _rigidbody2D: {fileID: 4773618698217589775}
+  _spriteRenderer: {fileID: 6809002961691833}
 --- !u!82 &3226211781041840425
 AudioSource:
   m_ObjectHideFlags: 0

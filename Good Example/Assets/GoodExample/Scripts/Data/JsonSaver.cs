@@ -8,11 +8,12 @@ public class JsonSaver : IDataSaver
     private const string FileName = "SaveData";
     private const string SaveFileExtensions = ".json";
 
-    private PlayerData _playerData;
+    private Data _playerData;
 
     public JsonSaver()
     {
-        _playerData = (PlayerData) Load();
+        _playerData = (Data) Load();
+        Debug.Log(_playerData.Health);
     }
 
     private string SavePath => Application.persistentDataPath;
@@ -31,15 +32,17 @@ public class JsonSaver : IDataSaver
     public object TryLoad()
     {
         if (DataAlreadyExist())
-            return false;
+            return null;
 
-        return JsonConvert.DeserializeObject<PlayerData>(File.ReadAllText(FullPath));
+        return JsonConvert.DeserializeObject<Data>(File.ReadAllText(FullPath));
     }
 
     public object Load()
     {
         if (TryLoad() == null)
-            _playerData = new PlayerData();
+        {
+            _playerData = new Data();
+        }
 
         return _playerData;
     }

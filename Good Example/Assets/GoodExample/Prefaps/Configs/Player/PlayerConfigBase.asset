@@ -12,15 +12,81 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc5dc892d690e444682e13e6a134d89d, type: 3}
   m_Name: PlayerConfigBase
   m_EditorClassIdentifier: 
-  _speed: 5
   _color: {r: 0.15268183, g: 1, b: 0, a: 1}
   _sprite: {fileID: 21300000, guid: ccaa67cd337a0174db823f9ba1841ced, type: 3}
-  _health: 100
-  _jumpForce: 500
   _layerMask:
     serializedVersion: 2
     m_Bits: 8
-  _radius: 1
   _jumpClip: {fileID: 8300000, guid: 2de6ef58e1dc27b428efda367e87a9e8, type: 3}
+  _radius: 1
+  _yAnimation:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.0033333465
+      value: -0.00094246864
+      inSlope: 2.0289376
+      outSlope: 2.0289376
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.49666664
+      value: 1
+      inSlope: -0.00000028840955
+      outSlope: -0.00000028840955
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.41059604
+    - serializedVersion: 3
+      time: 1
+      value: 0.0047126412
+      inSlope: -1.9773921
+      outSlope: -1.9773921
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _scaleAnimation:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.0038909912
+      value: 1.0006409
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.50792205
+      value: 1.4998817
+      inSlope: -0.0061423318
+      outSlope: -0.0061423318
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.56645364
+    - serializedVersion: 3
+      time: 0.99972534
+      value: 1.0001068
+      inSlope: -1.2873662
+      outSlope: -1.2873662
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.116267145
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _duration: 1
+  _height: 4
   _runClip: {fileID: 8300000, guid: ba888dac1260b2a46b3093d720a4864c, type: 3}
   _stepsDistance: 2
+  _speed: 5
